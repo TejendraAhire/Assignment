@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bowlby+One+SC&family=Bree+Serif&family=Bruno+Ace+SC&family=Foldit:wght@600&family=Gloock&family=Holtwood+One+SC&family=Rowdies:wght@300;400;700&family=Shadows+Into+Light&family=Space+Mono:ital,wght@1,700&family=Vina+Sans&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <div class="main">
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="title">
+      <span>Let's get started!</span><br />
+      <span>Add your details &#40;As per your registered records&#41;</span>
+    </div>
+
+
+    <div class="form" id="form1">
+
+      <label for="name">Name</label><br />
+      <input type="text" class="name" id="name" name="name" placeholder="Enter Name" />
+
+
+      <label>Nature of Driving License</label>
+
+      <div class="rflex"  >
+
+        <div class="rblock">
+          <input type="radio" name="ndl" id="private" value="Private">
+          <label for="private" style="opacity: 45%;">Private</label>
+        </div>
+
+        <div class="rblock">
+          <input type="radio" name="ndl" id="commercial" value="">
+          <label for="commercial" style="opacity: 45%;">Commercial</label>
+        </div>
+
+
+      </div>
+
+      <label>Type of Previous Driving License</label>
+
+      <div class="rflex">
+
+        <div class="rblock">
+          <input type="radio" name="tpdl" id="Paperdl">
+          <label for="Paperdl" style="opacity: 45%;">Paper Driving License</label>
+        </div>
+
+        <div class="rblock">
+          <input type="radio" name="tpdl" id="Smartdl">
+          <label for="Smartdl" style="opacity: 45%;">Smart Driving License</label>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="form" id="form2">
+
+      <label for="place_dl_issue">Place where Driving License was Issued</label><br />
+      <input type="text" class="name" id="place_dl_issue" name="place_dl_issue" placeholder="Enter Place Name" />
+
+      <label for="issued_year">Issued Year of License</label><br />
+
+
+
+      <div class="dropdown" onclick="dd1click()">
+        <div class="dropd1">
+          <label id="dd1lbl" style="opacity: 40%;">Chose Year</label>
+          <span id="symbol1">|||</span>
+        </div>
+
+
+        <div class="ddbox" id="ddbox1">
+
+          <div>
+            <span style="margin-left: 4vw; opacity: 40%;font-size:xx-large;font-weight: 200;">Year</span><br>
+          </div>
+          <ul class="listbox" id="ddl1">
+
+
+             
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1), dd1select(2000)" value="2000">2000</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2001)" value="2001">2001</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2002)" value="2002">2002</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1)1dd1select(2003)" value="2003">2003</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2004)" value="2004">2004</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2005)" value="2005">2005</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2006)" value="2006">2006</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2007)" value="2007">2007</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2008)" value="2008">2008</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2009)" value="2009">2009</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2010)" value="2010">2010</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2011)" value="2011">2011</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2012)" value="2012">2012</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2013)" value="2013">2013</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2014)" value="2014">2014</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2015)" value="2015">2015</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2016)" value="2016">2016</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2017)" value="2017">2017</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2018)" value="2018">2018</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2019)" value="2019">2019</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2020)" value="2020">2020</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2021)" value="2021">2021</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2022)" value="2022">2022</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2023)" value="2023">2023</a></li>
+            <li><a href="#" class="dd1" onclick="updateProgressBar(1),dd1select(2024)" value="2024">2024</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <label for="issued_year">Issued Year of License</label><br />
+
+
+
+      <div class="dropdown" onclick="dd2click()">
+        <div class="dropd2">
+          <label  id="dd2lbl" style="opacity: 40%;">Chose Year</label>
+          <span id="symbol2" >|||</span>
+        </div>
+
+
+        <div class="ddbox" id="ddbox2">
+
+          <div>
+            <span style="margin-left: 4vw; opacity: 40%;font-size:xx-large;font-weight: 200;">Year</span><br>
+          </div>
+          <ul class="listbox">
+ 
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2001)" value="2001">2001</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2), dd2select(2000)" value="2000">2000</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2002)" value="2002">2002</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2003)" value="2003">2003</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2004)" value="2004">2004</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2005)" value="2005">2005</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2006)" value="2006">2006</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2007)" value="2007">2007</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2008)" value="2008">2008</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2009)" value="2009">2009</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2010)" value="2010">2010</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2011)" value="2011">2011</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2012)" value="2012">2012</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2013)" value="2013">2013</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2014)" value="2014">2014</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2015)" value="2015">2015</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2016)" value="2016">2016</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2017)" value="2017">2017</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2018)" value="2018">2018</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2019)" value="2019">2019</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2020)" value="2020">2020</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2021)" value="2021">2021</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2022)" value="2022">2022</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2023)" value="2023">2023</a></li>
+            <li><a href="#" class="dd2" onclick="updateProgressBar(2),dd2select(2024)" value="2024">2024</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+</div>
+      <div style="display: flex; align-items: center; justify-content: center; margin: 2vw; padding-left: 2vw;"  >
+        <a href="#" class="btn" onclick="formChange()">&#60; Back</a>
+     </div>
+
+
+
+
+
+
+
+      
+
+
+
+
+
+    <!-- <div style="display: flex; align-items: center; justify-content: center; margin: 2vw; padding-left: 2vw;"  >
+       <a href="#" class="btn">&#60; Back</a>
+    </div> -->
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

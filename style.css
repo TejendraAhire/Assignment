@@ -1,0 +1,171 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 40vh; */
+}
+
+.main {
+  height: 80vh;
+  width: 60vw;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.progress-bar {
+  width: auto;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #fa3737;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.title {
+  width: auto;
+  text-align: center;
+  margin: 2vh 0 2vh 0;
+}
+
+.title span:first-child {
+  font-size: x-large;
+  color: #fa3737;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 500;
+}
+
+.form {
+  padding: 0 6vw 0 4vw;
+}
+
+.form * {
+  margin: 2vh;
+  font-size: 17px;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+}
+
+.name {
+  width: 100%;
+  height: 8vh;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+
+  padding: 0 0 0 2vw;
+}
+
+.name::placeholder {
+  opacity: 50%;
+}
+
+.rflex {
+  display: flex;
+  width: 103%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rblock {
+  width: 50%;
+  display: inline-flex;
+  height: 7vh;
+  margin: 0 -4px 0 -4px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  flex-shrink: 46%;
+}
+
+.btn {
+  text-decoration: none;
+  width: 12vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fa3737;
+  color: #ffffff;
+}
+
+.form {
+  /* padding: 0 6vw 0 4vw; */
+  position: relative;
+  top: 0;
+}
+
+.dropd1,
+.dropd2 {
+  width: 100%;
+  height: 8vh;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 3vw;
+}
+
+.ddbox {
+  height: 50vh;
+  overflow: scroll;
+  background-color: white;
+  margin: 0 0 0 2vw;
+  width: auto;
+  border-radius: 25px;
+  display: none;
+  position: relative;
+  top: -30vh;
+  box-shadow: 0px 4px 5px 0px;
+}
+
+.ddbox::-webkit-scrollbar {
+  display: none;
+}
+
+.ddbox .listbox li {
+  width: auto;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+.ddbox .listbox a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(48, 49, 49);
+}
+
+#form2 {
+  display: none;
+}
+
+#form1 {
+  display: block;
+}
